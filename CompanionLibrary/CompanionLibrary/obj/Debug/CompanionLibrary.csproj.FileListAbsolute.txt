@@ -1,0 +1,9 @@
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\bin\Debug\CompanionLibrary.dll
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\bin\Debug\CompanionLibrary.pdb
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\bin\Debug\UnityEngine.dll
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\bin\Debug\UnityEngine.xml
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\obj\Debug\CompanionLibrary.csprojAssemblyReference.cache
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\obj\Debug\CompanionLibrary.csproj.CoreCompileInputs.cache
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\obj\Debug\CompanionLibrary.csproj.CopyComplete
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\obj\Debug\CompanionLibrary.dll
+C:\Year 4 s1\CompanionAppProject\CompanionLibrary\CompanionLibrary\obj\Debug\CompanionLibrary.pdb
