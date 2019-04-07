@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+
+CHARLIE ANSELL
+07/04/2019
+
+This xml page creates the UI for showing the stats that the user
+acquired through either playing the survival shooter or space shooter game.
+
+-->
+
+<!-- use the relative layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:scaleX="1"
+    android:scaleY="1">
+
+    <!-- indent relative layout for showing icon-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <!-- circle image view to show image of game played -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview_account_profile"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+
+    <!-- show the account that is logged in -->
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="TextView"
+        android:visibility="visible" />
+
+    <!-- Kills static label -->
+    <TextView
+        android:id="@+id/kills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="196dp"
+        android:text="Kills: "
+        android:textSize="25sp" />
+
+    <!-- Bullets Fired static label -->
+    <TextView
+        android:id="@+id/bulletsFired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kills"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-58dp"
+        android:singleLine="true"
+        android:text="Bullets fired:"
+        android:textSize="25sp" />
+
+    <!-- Bullets hit static label -->
+    <TextView
+        android:id="@+id/bulletsHit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bulletsFired"
+        android:layout_alignStart="@+id/bulletsFired"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Bullets hit:"
+        android:textSize="25sp" />
+
+    <!-- Bullets missed static label -->
+    <TextView
+        android:id="@+id/bulletsMissed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bulletsHit"
+        android:layout_alignEnd="@+id/kills"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-114dp"
+        android:text="Bullets missed:"
+        android:textSize="25sp" />
+
+    <!-- Score static label -->
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/kills"
+        android:layout_below="@id/bulletsMissed"
+        android:layout_marginEnd="-18dp"
+        android:text="Score:"
+        android:textSize="25sp" />
+
+    <!-- Hit accuracy static label -->
+    <TextView
+        android:id="@+id/hitAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Shot accuracy:"
+        android:textSize="25sp" />
+
+    <!-- Score per minute static label -->
+    <TextView
+        android:id="@+id/scorePerMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitAccuracy"
+        android:layout_alignEnd="@+id/kills"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-104dp"
+        android:text="Score per min:"
+        android:textSize="25sp" />
+
+    <!-- Time Played static label -->
+    <TextView
+        android:id="@+id/timePlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scorePerMin"
+        android:layout_alignEnd="@+id/score"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-67dp"
+        android:text="Time played:"
+        android:textSize="25sp" />
+
+    <!-- Users kills -->
+    <TextView
+        android:id="@+id/killValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kills"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users bullets fired -->
+    <TextView
+        android:id="@+id/bulletsFiredValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bulletsFired"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users bullets hit -->
+    <TextView
+        android:id="@+id/bulletsHitValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bulletsHit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users bullets missed -->
+    <TextView
+        android:id="@+id/bulletsMissedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bulletsMissed"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="-2dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users score -->
+    <TextView
+        android:id="@+id/scoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users hit accuracy -->
+    <TextView
+        android:id="@+id/shotAccuracyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hitAccuracy"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users score per minute -->
+    <TextView
+        android:id="@+id/scorePerMinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scorePerMin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <!-- Users time played -->
+    <TextView
+        android:id="@+id/timePlayedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timePlayed"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="0dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

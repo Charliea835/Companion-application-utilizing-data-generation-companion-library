@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/default_value"
+    android:textSize="25sp"
+    android:textAlignment="center"
+    android:id="@+id/menu_item" />
+
+    <!-- XML page to provide textview to parse into a listview
+    This file is called through the Main_menu java file-->

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+CHARLIE ANSELL
+07/04/2019
+
+This xml page creates the UI for showing the leaderboard and users rank on the
+showLeaderboard screen
+
+-->
+
+<!-- use the relative layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:scaleX="1"
+    android:scaleY="1">
+
+
+    <!-- create a circle image view with the help of external library -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_account_profile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignEnd="@+id/accountName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-40dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <!-- textView to show the logged in account -->
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/UsernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="280dp"
+        android:text="TextView"
+        android:visibility="visible" />
+
+    <!-- scrollview to scroll down the leaderboard -->
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/accountName">
+
+      <!-- indented relative layout -->
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <!-- textview to show rank data -->
+    <TextView
+        android:id="@+id/rankView"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+          <!-- textView to show username -->
+          <TextView
+              android:id="@+id/usernameView"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="111dp"
+              android:layout_marginTop="0dp"
+              android:text="TextView"
+              android:textSize="20dp"
+              android:visibility="visible" />
+
+          <!-- textView to show score -->
+          <TextView
+              android:id="@+id/scoreView"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="282dp"
+              android:layout_marginTop="0dp"
+              android:text="TextView"
+              android:textSize="20dp"
+              android:visibility="visible" />
+
+
+      </RelativeLayout>
+  </ScrollView>
+
+    <!-- show rank label where ranks of users will appear under -->
+    <TextView
+        android:id="@+id/RankLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="200dp"
+        android:text="Rank"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- show username label where usernames of users will appear under -->
+    <TextView
+        android:id="@+id/UsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RankLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="141dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- show score label where scores of users will appear under -->
+    <TextView
+        android:id="@+id/ScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RankLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:text="Score"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- show the players ranking on leaderboard-->
+    <TextView
+        android:id="@+id/PlayerRank"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="210dp"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+</RelativeLayout>

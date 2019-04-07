@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.compApp.ansel.companionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/companionapp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.compApp.ansel.companionapp.SplashActivity"
+            android:theme="@style/AppTheme.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.compApp.ansel.companionapp.UserLogin"
+            android:label="@string/title_activity_user_login" />
+        <activity
+            android:name="com.compApp.ansel.companionapp.Main_menu"
+            android:label="@string/statsToView" />
+        <activity
+            android:name="com.compApp.ansel.companionapp.ShowStats"
+            android:label="Stats" />
+        <activity
+            android:name="com.compApp.ansel.companionapp.StatMenu"
+            android:label="Choose what you want to view" />
+        <activity
+            android:name="com.compApp.ansel.companionapp.ShowLeaderboard"
+            android:label="Leaderboard"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+
+CHARLIE ANSELL
+07/04/2019
+
+This class creates the UI for the menu where the user can choose what game
+they want to view their statistics or the leaderboard for.
+
+-->
+
+<!-- use the relative layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.compApp.ansel.companionapp.Main_menu">
+
+    <!-- image to show icon of app -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/companionapp" />
+
+    <!-- informational text view -->
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:paddingTop="20dp"
+        android:text="Large Text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <!-- button to click for survival shooter game -->
+    <Button
+        android:id="@+id/TPS_button"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button_shape"
+        android:onClick="TPS"
+        android:text="@string/ThirdPersonShooter"
+        android:textColor="@color/colorWhite" />
+
+    <!-- button to click for space shooter game -->
+    <Button
+        android:id="@+id/TDS_Button"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TPS_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/button_shape"
+        android:onClick="TwoDS"
+        android:text="@string/TwoDimensionalShooter"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CompanionApp</string>
+    <string name="password">Password</string>
+    <string name="username">username</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_user_login">Login</string>
+    <string name="default_value">default</string>
+    <string name="ThirdPersonShooter">Survival shooter</string>
+    <string name="Platformer">Platformer</string>
+    <string name="statsToView">Stats to view</string>
+    <string name="showStats">Show stats</string>
+    <string name="showLeaderboard">Leaderboard</string>
+    <string name="TwoDimensionalShooter">Space Shooter</string>
+
+</resources>
